@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2b2b2b;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 20px;
+}
+
+.header {
+  position: relative;
+  height: 250px;
+  color: white;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* затемнение */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.header1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+  font-size: 12px;
+}
+
+.menu a:hover {
+  color: #8e84c9;
+}
+
+.icon {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.title1 {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.photos11 {
+  padding-top: 30px;
+}
+
+.photos11 .container {
+  border: 1px solid #eee;
+  padding: 0 0 20px;
+}
+
+.photos111 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.arr {
+  display: flex;
+  gap: 6px;
+}
+
+.arr button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: #8e84c9;
+  color: white;
+  cursor: pointer;
+}
+
+.arr button:hover {
+  background: #7d72bf;
+}
+
+.yozgi {
+  position: relative;
+  margin: 30px 10px 0;
+  height: 190px;
+}
+
+.yozgi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.yoz {
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  padding: 7px 12px;
+  background: #8e84c9;
+  color: white;
+  font-size: 11px;
+}
+
+.about1 {
+  padding-top: 70px;
+}
+
+.about2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.about-img {
+  position: relative;
+  z-index: 1;
+  width: 220px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.about3 {
+  background: #f6ece3;
+  margin-left: -36px;
+  padding: 35px 45px 30px 60px;
+  flex: 1;
+}
+
+.about4{
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about3 p {
+  font-size: 7px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.div1 {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.number1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #8e84c9;
+}
+
+.text {
+  max-width: 80px;
+  font-size: 7px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.rules {
+  padding: 70px 0 60px;
+}
+
+.rules-box {
+  display: flex;
+  gap: 60px;
+  margin-top: 35px;
+}
+
+.rules-menu {
+  width: 190px;
+  flex-shrink: 0;
+}
+
+.rules-menu li {
+  margin-bottom: 22px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.rules-menu li.active {
+  color: #8e84c9;
+  padding-left: 16px;
+}
+
+.rules-menu a:hover {
+  color: #8e84c9;
+}
+
+.rules-text h4 {
+  font-size: 12px;
+  margin: 22px 0 14px;
+}
+
+.rules-text h4:first-child {
+  margin-top: 0;
+}
+
+.rules-text p {
+  font-size: 8px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.dash-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 9px;
+  font-size: 8px;
+}
+
+/* фиолетовая палочка перед пунктом */
+.dash-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 8px;
+  height: 2px;
+  background: #8e84c9;
+}
+
+/* ---------- Подвал ---------- */
+.footer {
+  background: #f6ece3;
+  padding: 28px 0;
+  font-size: 9px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: #999;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-menu a:hover {
+  color: #8e84c9;
+}
+
+.footer-socials a {
+  color: #8e84c9;
+}
