@@ -179,6 +179,19 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.tennis-card1,
+.tennis-card2,
+.tennis-card3 {
+  position: relative;
+}
+
+.likee {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
 
 .club {
   width: 80%;
@@ -307,7 +320,6 @@ h2 {
   margin: 0 auto;
 }
 
-
 .prices {
   width: 330px;
 }
@@ -332,7 +344,6 @@ h2 {
 .btn:hover {
   background: #7d72bf;
 }
-
 
 .services {
   flex: 1;
@@ -379,6 +390,135 @@ h2 {
   color: white;
   font-size: 16px;
   font-weight: bold;
+}
+
+.inp {
+  width: 220px;
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.inp::placeholder {
+  color: #999;
+}
+
+.inp:focus {
+  border-color: #8b0000;
+  box-shadow: 0 0 5px #8b000033;
+}
+
+.cardd {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cardd:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px #00000025;
+}
+
+.cardd img {
+  transition: 0.3s;
+}
+
+.cardd:hover img {
+  transform: scale(1.03);
+}
+
+.cardd:active {
+  transform: scale(0.97);
+}
+
+.cardd h3 {
+  transition: 0.3s;
+}
+
+.cardd:hover h3 {
+  color: #8b0000;
+}
+
+/* Dark mode tugmasi */
+.theme-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .main,
+body.dark header,
+body.dark .hero,
+body.dark .sec-1,
+body.dark .sec-2,
+body.dark .trainers,
+body.dark .wrapper {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark li {
+  color: white;
+}
+
+body.dark .cardd,
+body.dark .prices,
+body.dark .services {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .inp {
+  background-color: #222;
+  color: white;
+  border-color: #555;
+}
+
+body.dark .inp::placeholder {
+  color: #bbb;
+}
+
+body.dark button {
+  color: white;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .main {
+  background-image: url("assets/Rectangle 26.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.dark header,
+body.dark .hero {
+  background-color: transparent;
+  color: white;
 }
 
 /* @media (max-width: 800px) {
