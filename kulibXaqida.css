@@ -176,7 +176,7 @@ ul {
   flex: 1;
 }
 
-.about4{
+.about4 {
   font-size: 17px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -265,7 +265,6 @@ ul {
   font-size: 8px;
 }
 
-/* фиолетовая палочка перед пунктом */
 .dash-list li::before {
   content: "";
   position: absolute;
@@ -276,7 +275,6 @@ ul {
   background: #8e84c9;
 }
 
-/* ---------- Подвал ---------- */
 .footer {
   background: #f6ece3;
   padding: 28px 0;
@@ -304,4 +302,247 @@ ul {
 
 .footer-socials a {
   color: #8e84c9;
+}
+
+@media (max-width: 1028px) {
+  .header1 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+
+  .about2 {
+    gap: 25px;
+  }
+
+  .about-img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .rules-box {
+    gap: 25px;
+  }
+
+  .footer-inner {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header1 {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon {
+    margin-left: auto;
+  }
+
+  .title1 {
+    font-size: 42px;
+  }
+
+  .about2 {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .div1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .rules-box {
+    flex-direction: column;
+  }
+
+  .rules-menu,
+  .rules-text {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+
+  .footer-menu {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .menu {
+    justify-content: flex-start;
+    gap: 12px 18px;
+  }
+
+  .title1 {
+    font-size: 34px;
+  }
+
+  .section-title {
+    font-size: 27px;
+  }
+
+  .yozgi img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .about4 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .about3 p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .div1 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .div2,
+  .fact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .rules-menu {
+    padding: 20px;
+  }
+
+  .rules-text {
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-inner {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 92%;
+  }
+
+  .header1 {
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .title1 {
+    font-size: 29px;
+  }
+
+  .photos11,
+  .about1,
+  .rules {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .yozgi img {
+    height: 220px;
+  }
+
+  .about-img {
+    max-height: 240px;
+  }
+
+  .about4 {
+    font-size: 21px;
+  }
+
+  .about3 p {
+    font-size: 13px;
+  }
+
+  .number {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .rules-menu {
+    padding: 15px;
+  }
+
+  .rules-menu li {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .rules-text {
+    font-size: 13px;
+  }
+
+  .rules-text h4 {
+    font-size: 15px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-menu {
+    gap: 12px 18px;
+  }
+
+  .footer-menu a,
+  .copyright {
+    font-size: 12px;
+  }
 }
