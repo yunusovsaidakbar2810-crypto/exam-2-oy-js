@@ -1,0 +1,681 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #2b2b2b;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("assets/Rectangle 26.png") center/cover no-repeat;
+  color: white;
+}
+
+header {
+  height: 85px;
+  padding: 0 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff40;
+}
+
+.logo {
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #9187ca;
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+  font-size: 19px;
+}
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 85px);
+  padding: 165px 16% 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.video button {
+  width: 64px;
+  height: 64px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: #9187ca;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.video p,
+.card p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cards {
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  right: 16%;
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  flex: 1;
+  min-width: 0;
+  padding: 30px 28px;
+  background: #9187ca;
+}
+
+.card p {
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 17px;
+}
+
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 150px;
+}
+
+.tennis-card1,
+.tennis-card2,
+.tennis-card3 {
+  position: relative;
+  width: 300px;
+  height: 360px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.tennis-card1 {
+  background-image: url("assets/Rectangle 39.png");
+}
+
+.tennis-card2 {
+  background-image: url("assets/Rectangle 41.png");
+}
+
+.tennis-card3 {
+  background-image: url("assets/Rectangle 43.png");
+}
+
+.tennis-card1 h2,
+.tennis-card2 h2,
+.tennis-card3 h2 {
+  padding-bottom: 15px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+.tennis-card1:hover,
+.tennis-card2:hover,
+.tennis-card3:hover {
+  transform: translateY(-8px);
+}
+
+.tennis-card1:active,
+.tennis-card2:active,
+.tennis-card3:active {
+  transform: scale(0.97);
+}
+
+.likee {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.club {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+}
+
+.club img {
+  width: 50%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.text {
+  width: 50%;
+  padding: 50px 45px;
+  background: #f7ebdf;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 25px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 13px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: #9187ca;
+}
+
+.trainers {
+  width: 84%;
+  margin: 20px auto;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.top h1 {
+  font-size: 26px;
+}
+
+.buttons,
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button,
+.arrows button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #9187ca;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cardsss {
+  display: flex;
+  justify-content: center;
+}
+
+.cardd {
+  width: 16%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardd:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px #00000025;
+}
+
+.cardd:active {
+  transform: scale(0.97);
+}
+
+.cardd img {
+  width: 150px;
+  height: 177px;
+  padding: 10px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.cardd:hover img {
+  transform: scale(1.03);
+}
+
+.cardd h3 {
+  margin: 17px 0 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: 0.3s;
+}
+
+.cardd:hover h3 {
+  color: #8b0000;
+}
+
+.cardd p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: flex;
+  gap: 80px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.prices {
+  width: 330px;
+}
+
+.prices h2 {
+  margin-bottom: 42px;
+}
+
+.btn {
+  height: 38px;
+  margin-top: 19px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #8e84c9;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #7d72bf;
+}
+
+.services {
+  flex: 1;
+}
+
+.cardddd {
+  margin-top: 45px;
+  padding: 18px;
+  border: 1px solid #eee;
+}
+
+.photo {
+  position: relative;
+  height: 170px;
+  background: #222;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.photo p {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.inp {
+  width: 220px;
+  padding: 12px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  outline: none;
+  color: #333;
+  background: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.inp::placeholder {
+  color: #999;
+}
+
+.inp:focus {
+  border-color: #8b0000;
+  box-shadow: 0 0 5px #8b000033;
+}
+
+.theme-btn {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* DARK MODE */
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .text,
+body.dark .cardd,
+body.dark .prices,
+body.dark .services {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark li {
+  color: white;
+}
+
+body.dark .inp {
+  background: #222;
+  color: white;
+  border-color: #555;
+}
+
+body.dark .inp::placeholder {
+  color: #bbb;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  header {
+    padding: 0 30px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  .hero {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .cards {
+    left: 30px;
+    right: 30px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .sec-1 {
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .club {
+    gap: 20px;
+  }
+
+  .wrapper {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .cardsss {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .cardd {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cardd img {
+    max-width: 180px;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+/* SMALL TABLET */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    min-height: 85px;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .cards {
+    position: static;
+    margin: 30px 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .main {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .sec-1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 60px;
+  }
+
+  .tennis-card1,
+  .tennis-card2,
+  .tennis-card3 {
+    width: 100%;
+    height: 260px;
+  }
+
+  .tennis-card3 {
+    grid-column: 1 / -1;
+  }
+
+  .club {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .club img,
+  .text {
+    width: 100%;
+  }
+
+  .cardsss {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .prices {
+    width: 100%;
+  }
+
+  .inp {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 26px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .icons {
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .video {
+    gap: 12px;
+  }
+
+  .video button {
+    width: 52px;
+    height: 52px;
+  }
+
+  .cards,
+  .sec-1,
+  .cardsss {
+    grid-template-columns: 1fr;
+  }
+
+  .sec-1 {
+    padding: 16px;
+  }
+
+  .tennis-card3 {
+    grid-column: auto;
+  }
+
+  .club {
+    width: 92%;
+  }
+
+  .club img {
+    height: auto;
+  }
+
+  .text {
+    padding: 25px 20px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p,
+  .text li {
+    font-size: 14px;
+  }
+
+  .trainers {
+    width: 92%;
+  }
+
+  .top {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .cardd {
+    width: 100%;
+  }
+
+  .cardd img {
+    width: 100%;
+    height: auto;
+  }
+
+  .wrapper {
+    padding: 20px 16px;
+    gap: 30px;
+  }
+
+  .photo {
+    height: 170px;
+  }
+}
