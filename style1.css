@@ -311,7 +311,7 @@ li::before {
 }
 
 .cardd:hover h3 {
-  color: #8b0000;
+  color: grey;
 }
 
 .cardd p {
