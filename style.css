@@ -565,11 +565,6 @@ body.dark .hero {
     font-size: 42px;
   }
 
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
   .sec-1 {
     gap: 20px;
     padding: 30px;
